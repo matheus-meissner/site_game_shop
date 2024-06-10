@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ### CABEÇALHO ### */
 
 header {
@@ -46,7 +50,7 @@ header nav li a:hover {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1250px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -179,4 +183,190 @@ footer {
     background-color: #182C61;
     color:#ecf0f1;
     padding: 16px 0;
+}
+
+@media screen and (max-width: 640px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: x-large;
+    }
+
+    header nav li {
+        margin: 8px 16px;
+        font-size: 16px;
+        justify-content: space-between;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    section .container {
+        flex-direction: column;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .home .informacoes {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .home .container-foto {
+        margin-top: 20px;
+    }
+
+    .contact_methods {
+        flex-direction: column;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .social_links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .projetos .container-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projetos .projeto {
+        max-width: 100%;
+    }
+
+    .store_front {
+        max-width: 100%;
+    }
+
+    .mg_b {
+        margin-bottom: 27px;
+    }
+
+    .sobre_a_loja {
+        margin-top: 8px;
+    }
+
+    .nos_acompanhe {
+        margin-top: 8px;
+    }
+
+    .venha_ate_nos {
+        margin-top: 2px;
+    }
+
+    footer .container p {
+        text-align: center;
+        font-size: small;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: x-large;
+    }
+
+    header nav li {
+        margin: 8px 16px;
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0 10px;
+        max-width: 600px;
+    }
+
+    section .container {
+        flex-direction: column;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .home .informacoes {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .home .container-foto {
+        margin-top: 20px;
+    }
+
+    .contact_methods {
+        flex-direction: column;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .social_links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .projetos .container-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projetos .projeto {
+        max-width: 100%;
+    }
+
+    .store_front {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .mg_b {
+        margin-bottom: 27px;
+    }
+
+    .sobre_a_loja {
+        margin-top: 8px;
+    }
+
+    .nos_acompanhe {
+        margin-top: 8px;
+    }
+
+    .venha_ate_nos {
+        margin-top: 2px;
+    }
+
+    footer .container p {
+        text-align: center;
+        font-size: small;
+    }
 }
